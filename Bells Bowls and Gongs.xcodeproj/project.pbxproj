@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -122,13 +122,12 @@
 				TargetAttributes = {
 					D207DC371F54D565007D3219 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 929F366GNU;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = D207DC331F54D565007D3219 /* Build configuration list for PBXProject "Bells Bowls and Gongs" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
