@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="bkY-fV-kJM">
-                                <rect key="frame" x="69.5" y="51.5" width="236" height="564.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="bkY-fV-kJM">
+                                <rect key="frame" x="69.5" y="72" width="236" height="523.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jR-9O-Quj">
                                         <rect key="frame" x="0.0" y="0.0" width="236" height="47.5"/>
@@ -38,7 +38,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Tf-bT-zDb">
-                                        <rect key="frame" x="0.0" y="72.5" width="236" height="153"/>
+                                        <rect key="frame" x="0.0" y="91.5" width="236" height="153"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TxX-lq-Yx1">
                                                 <rect key="frame" x="0.0" y="0.0" width="236" height="153"/>
@@ -56,14 +56,23 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-N7-Z6k">
                                                                 <rect key="frame" x="0.0" y="41" width="236" height="30"/>
                                                                 <state key="normal" title="Bowl B"/>
+                                                                <connections>
+                                                                    <action selector="BowlBBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJr-WU-Nki"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an7-dw-m7g">
                                                                 <rect key="frame" x="0.0" y="82" width="236" height="30"/>
                                                                 <state key="normal" title="Burmese Gong"/>
+                                                                <connections>
+                                                                    <action selector="BurmeseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MD-VB-abM"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdO-Md-6Ni">
                                                                 <rect key="frame" x="0.0" y="123" width="236" height="30"/>
                                                                 <state key="normal" title="Chinese Gong"/>
+                                                                <connections>
+                                                                    <action selector="ChineseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyc-qo-hl6"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -71,8 +80,8 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gong.png" translatesAutoresizingMaskIntoConstraints="NO" id="lEg-UB-Uoe">
-                                        <rect key="frame" x="0.0" y="250.5" width="236" height="314"/>
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gong.png" translatesAutoresizingMaskIntoConstraints="NO" id="lEg-UB-Uoe">
+                                        <rect key="frame" x="0.0" y="288.5" width="236" height="235"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -93,6 +102,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gong.png" width="236" height="314"/>
+        <image name="Gong.png" width="236" height="235"/>
     </resources>
 </document>

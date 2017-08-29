@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         
         //BowlB
         do {
-            playBowlB = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path (forResource: "bowla", ofType: "wav")!))
+            playBowlB = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path (forResource: "bowlb", ofType: "wav")!))
             playBowlB.prepareToPlay()
         }
         catch {
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         
         //Burmese
         do {
-            playBurmese = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path (forResource: "bowla", ofType: "wav")!))
+            playBurmese = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path (forResource: "gong-burmese", ofType: "wav")!))
             playBurmese.prepareToPlay()
         }
         catch {
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         
         //Chinese
         do {
-            playChinese = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path (forResource: "bowla", ofType: "wav")!))
+            playChinese = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path (forResource: "gong-chinese", ofType: "wav")!))
             playChinese.prepareToPlay()
         }
         catch {
@@ -80,12 +80,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var GongImage: UIImageView!
     
     @IBAction func BowlABtn(_ sender: Any) {
+        playBowlA.play()
+        
+        GongImage.StartRotating()
+    }
+    
+    @IBAction func BowlBBtn(_ sender: Any) {
+        playBowlB.play()
+        
+        GongImage.StartRotating()
+    }
+    
+    @IBAction func BurmeseBtn(_ sender: Any) {
+        playBurmese.play()
+        
         GongImage.StartRotating()
     }
     
     
-    
-    
+    @IBAction func ChineseBtn(_ sender: Any) {
+        playChinese.play()
+        
+        GongImage.StartRotating()
+    }
     
 }
 
