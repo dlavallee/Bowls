@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63DF15191F550F68000A6F98 /* Gong.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DF15181F550F68000A6F98 /* Gong.png */; };
 		D207DC3C1F54D565007D3219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D207DC3B1F54D565007D3219 /* AppDelegate.swift */; };
 		D207DC3E1F54D565007D3219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D207DC3D1F54D565007D3219 /* ViewController.swift */; };
 		D207DC411F54D565007D3219 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D207DC3F1F54D565007D3219 /* Main.storyboard */; };
@@ -18,10 +17,10 @@
 		D207DC571F54DAA2007D3219 /* bowlb.wav in Resources */ = {isa = PBXBuildFile; fileRef = D207DC531F54DAA2007D3219 /* bowlb.wav */; };
 		D207DC581F54DAA2007D3219 /* gong-burmese.wav in Resources */ = {isa = PBXBuildFile; fileRef = D207DC541F54DAA2007D3219 /* gong-burmese.wav */; };
 		D207DC591F54DAA2007D3219 /* gong-chinese.wav in Resources */ = {isa = PBXBuildFile; fileRef = D207DC551F54DAA2007D3219 /* gong-chinese.wav */; };
+		D2EDBD6B1F562AF00081E46B /* Gong.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDBD6A1F562AEF0081E46B /* Gong.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63DF15181F550F68000A6F98 /* Gong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gong.png; sourceTree = "<group>"; };
 		D207DC381F54D565007D3219 /* Bells Bowls and Gongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bells Bowls and Gongs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D207DC3B1F54D565007D3219 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D207DC3D1F54D565007D3219 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		D207DC531F54DAA2007D3219 /* bowlb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bowlb.wav; sourceTree = "<group>"; };
 		D207DC541F54DAA2007D3219 /* gong-burmese.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "gong-burmese.wav"; sourceTree = "<group>"; };
 		D207DC551F54DAA2007D3219 /* gong-chinese.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "gong-chinese.wav"; sourceTree = "<group>"; };
+		D2EDBD6A1F562AEF0081E46B /* Gong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gong.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				D207DC3D1F54D565007D3219 /* ViewController.swift */,
 				D207DC3F1F54D565007D3219 /* Main.storyboard */,
 				D207DC421F54D565007D3219 /* Assets.xcassets */,
-				63DF15181F550F68000A6F98 /* Gong.png */,
+				D2EDBD6A1F562AEF0081E46B /* Gong.png */,
 				D207DC511F54DA4B007D3219 /* Sounds */,
 				D207DC441F54D565007D3219 /* LaunchScreen.storyboard */,
 				D207DC471F54D565007D3219 /* Info.plist */,
@@ -155,7 +155,7 @@
 				D207DC591F54DAA2007D3219 /* gong-chinese.wav in Resources */,
 				D207DC561F54DAA2007D3219 /* bowla.wav in Resources */,
 				D207DC571F54DAA2007D3219 /* bowlb.wav in Resources */,
-				63DF15191F550F68000A6F98 /* Gong.png in Resources */,
+				D2EDBD6B1F562AF00081E46B /* Gong.png in Resources */,
 				D207DC411F54D565007D3219 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

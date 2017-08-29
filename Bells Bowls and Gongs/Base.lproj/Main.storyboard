@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A352a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,75 +22,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="bkY-fV-kJM">
-                                <rect key="frame" x="69.5" y="72" width="236" height="523.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZHS-zL-Las">
+                                <rect key="frame" x="69" y="123" width="237" height="524"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jR-9O-Quj">
-                                        <rect key="frame" x="0.0" y="0.0" width="236" height="47.5"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Bells Gongs and Bowls">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.18198272462887388" green="1" blue="0.15824627378374789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <font key="NSFont" size="14" name="Zapfino"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Tf-bT-zDb">
-                                        <rect key="frame" x="0.0" y="91.5" width="236" height="153"/>
+                                    <stackView opaque="NO" contentMode="bottom" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bkY-fV-kJM">
+                                        <rect key="frame" x="0.0" y="0.0" width="237" height="524"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TxX-lq-Yx1">
-                                                <rect key="frame" x="0.0" y="0.0" width="236" height="153"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jR-9O-Quj">
+                                                <rect key="frame" x="18" y="0.0" width="201.5" height="114"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Bells Gongs and Bowls">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.18198272462887388" green="1" blue="0.15824627378374789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="14" name="Zapfino"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2Tf-bT-zDb">
+                                                <rect key="frame" x="68" y="134" width="101" height="135"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="neB-ab-FH4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="236" height="153"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snx-GM-aT3">
-                                                                <rect key="frame" x="0.0" y="0.0" width="236" height="30"/>
-                                                                <state key="normal" title="Bowl A"/>
-                                                                <connections>
-                                                                    <action selector="BowlABtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfo-57-COI"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-N7-Z6k">
-                                                                <rect key="frame" x="0.0" y="41" width="236" height="30"/>
-                                                                <state key="normal" title="Bowl B"/>
-                                                                <connections>
-                                                                    <action selector="BowlBBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJr-WU-Nki"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an7-dw-m7g">
-                                                                <rect key="frame" x="0.0" y="82" width="236" height="30"/>
-                                                                <state key="normal" title="Burmese Gong"/>
-                                                                <connections>
-                                                                    <action selector="BurmeseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MD-VB-abM"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdO-Md-6Ni">
-                                                                <rect key="frame" x="0.0" y="123" width="236" height="30"/>
-                                                                <state key="normal" title="Chinese Gong"/>
-                                                                <connections>
-                                                                    <action selector="ChineseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyc-qo-hl6"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snx-GM-aT3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101" height="30"/>
+                                                        <state key="normal" title="Bowl A"/>
+                                                        <connections>
+                                                            <action selector="BowlABtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfo-57-COI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-N7-Z6k">
+                                                        <rect key="frame" x="0.0" y="35" width="101" height="30"/>
+                                                        <state key="normal" title="Bowl B"/>
+                                                        <connections>
+                                                            <action selector="BowlBBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJr-WU-Nki"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdO-Md-6Ni">
+                                                        <rect key="frame" x="0.0" y="70" width="101" height="30"/>
+                                                        <state key="normal" title="Chinese Gong"/>
+                                                        <connections>
+                                                            <action selector="ChineseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyc-qo-hl6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an7-dw-m7g">
+                                                        <rect key="frame" x="0.0" y="105" width="101" height="30"/>
+                                                        <state key="normal" title="Burmese Gong"/>
+                                                        <connections>
+                                                            <action selector="BurmeseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MD-VB-abM"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="an7-dw-m7g" firstAttribute="height" secondItem="Snx-GM-aT3" secondAttribute="height" id="83K-ZR-f1p"/>
+                                                    <constraint firstItem="QMY-N7-Z6k" firstAttribute="height" secondItem="Snx-GM-aT3" secondAttribute="height" id="LlM-gO-ZhO"/>
+                                                    <constraint firstItem="WdO-Md-6Ni" firstAttribute="height" secondItem="Snx-GM-aT3" secondAttribute="height" id="O71-gv-nFg"/>
+                                                    <constraint firstItem="QMY-N7-Z6k" firstAttribute="width" secondItem="Snx-GM-aT3" secondAttribute="width" id="OCF-Qm-Q2E"/>
+                                                    <constraint firstItem="an7-dw-m7g" firstAttribute="width" secondItem="Snx-GM-aT3" secondAttribute="width" id="Z86-Wk-lBJ"/>
+                                                    <constraint firstItem="WdO-Md-6Ni" firstAttribute="width" secondItem="Snx-GM-aT3" secondAttribute="width" id="ieh-1t-yVE"/>
+                                                </constraints>
                                             </stackView>
+                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gong.png" translatesAutoresizingMaskIntoConstraints="NO" id="lEg-UB-Uoe">
+                                                <rect key="frame" x="0.5" y="289" width="236" height="235"/>
+                                            </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2Tf-bT-zDb" firstAttribute="leading" secondItem="bkY-fV-kJM" secondAttribute="leading" constant="68" id="2GX-Fi-fXg"/>
+                                            <constraint firstItem="2Tf-bT-zDb" firstAttribute="top" secondItem="bkY-fV-kJM" secondAttribute="top" constant="134" id="IOZ-Zv-jj9"/>
+                                        </constraints>
                                     </stackView>
-                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gong.png" translatesAutoresizingMaskIntoConstraints="NO" id="lEg-UB-Uoe">
-                                        <rect key="frame" x="0.0" y="288.5" width="236" height="235"/>
-                                    </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bkY-fV-kJM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vwz-FD-hFZ"/>
-                            <constraint firstItem="bkY-fV-kJM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hk1-Lp-pSZ"/>
+                            <constraint firstItem="ZHS-zL-Las" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="103" id="Rkg-mf-ge2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZHS-zL-Las" secondAttribute="bottom" constant="20.5" id="hWC-m1-gmh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZHS-zL-Las" secondAttribute="trailing" constant="53.5" id="t6k-eB-28V"/>
+                            <constraint firstItem="ZHS-zL-Las" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="zyw-ZD-Esr"/>
                         </constraints>
                     </view>
                     <connections>
