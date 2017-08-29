@@ -20,11 +20,75 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cMV-4a-xvl">
+                                <rect key="frame" x="47" y="49" width="291" height="510"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="bkY-fV-kJM">
+                                <rect key="frame" x="86.5" y="221" width="201.5" height="225.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jR-9O-Quj">
+                                        <rect key="frame" x="0.0" y="0.0" width="201.5" height="47.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Bells Gongs and Bowls">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.18198272462887388" green="1" blue="0.15824627378374789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="14" name="Zapfino"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Tf-bT-zDb">
+                                        <rect key="frame" x="0.0" y="72.5" width="201.5" height="153"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TxX-lq-Yx1">
+                                                <rect key="frame" x="0.0" y="0.0" width="201.5" height="153"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="neB-ab-FH4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="201.5" height="153"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snx-GM-aT3">
+                                                                <rect key="frame" x="0.0" y="0.0" width="201.5" height="30"/>
+                                                                <state key="normal" title="Bowl A"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-N7-Z6k">
+                                                                <rect key="frame" x="0.0" y="41" width="201.5" height="30"/>
+                                                                <state key="normal" title="Bowl B"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an7-dw-m7g">
+                                                                <rect key="frame" x="0.0" y="82" width="201.5" height="30"/>
+                                                                <state key="normal" title="Burmese Gong"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdO-Md-6Ni">
+                                                                <rect key="frame" x="0.0" y="123" width="201.5" height="30"/>
+                                                                <state key="normal" title="Chinese Gong"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cMV-4a-xvl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Et-WJ-dyV"/>
+                            <constraint firstItem="cMV-4a-xvl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IAj-c1-RGM"/>
+                            <constraint firstItem="cMV-4a-xvl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RLZ-2i-7CJ"/>
+                            <constraint firstItem="bkY-fV-kJM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vwz-FD-hFZ"/>
+                            <constraint firstItem="cMV-4a-xvl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hiJ-PF-p0F"/>
+                            <constraint firstItem="bkY-fV-kJM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hk1-Lp-pSZ"/>
+                            <constraint firstItem="cMV-4a-xvl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tPy-VB-zaX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
