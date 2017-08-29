@@ -77,7 +77,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet weak var GongImage: UIImageView!
+    @IBOutlet weak var GongImage: UIStackView!
+    
     
     @IBAction func BowlABTN(_ sender: Any) {
         GongImage.StartRotating()
