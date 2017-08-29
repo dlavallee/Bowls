@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A352a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="bkY-fV-kJM">
-                                <rect key="frame" x="69.5" y="64" width="236" height="539.5"/>
+                                <rect key="frame" x="69.5" y="51.5" width="236" height="564.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jR-9O-Quj">
                                         <rect key="frame" x="0.0" y="0.0" width="236" height="47.5"/>
@@ -38,10 +38,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Tf-bT-zDb">
-                                        <rect key="frame" x="0.0" y="72.5" width="236" height="467"/>
+                                        <rect key="frame" x="0.0" y="72.5" width="236" height="153"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TxX-lq-Yx1">
-                                                <rect key="frame" x="0.0" y="0.0" width="236" height="467"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="236" height="153"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="neB-ab-FH4">
                                                         <rect key="frame" x="0.0" y="0.0" width="236" height="153"/>
@@ -49,9 +49,6 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snx-GM-aT3">
                                                                 <rect key="frame" x="0.0" y="0.0" width="236" height="30"/>
                                                                 <state key="normal" title="Bowl A"/>
-                                                                <connections>
-                                                                    <action selector="BowlABTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t0H-T3-9rL"/>
-                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-N7-Z6k">
                                                                 <rect key="frame" x="0.0" y="41" width="236" height="30"/>
@@ -67,18 +64,14 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gong.png" translatesAutoresizingMaskIntoConstraints="NO" id="lEg-UB-Uoe">
-                                                        <rect key="frame" x="0.0" y="153" width="236" height="314"/>
-                                                    </imageView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gong.png" translatesAutoresizingMaskIntoConstraints="NO" id="lEg-UB-Uoe">
+                                        <rect key="frame" x="0.0" y="250.5" width="236" height="314"/>
+                                    </imageView>
                                 </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nuk-ru-6xh">
-                                <rect key="frame" x="67" y="454" width="224" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,9 +80,6 @@
                             <constraint firstItem="bkY-fV-kJM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hk1-Lp-pSZ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="GongImage" destination="nuk-ru-6xh" id="sPp-fP-ZxN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
