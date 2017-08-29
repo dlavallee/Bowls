@@ -6,9 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,28 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDz-h8-zvl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDz-h8-zvl">
                                 <rect key="frame" x="0.0" y="0.0" width="372" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XDz-h8-zvl" secondAttribute="height" multiplier="335:579" id="iEV-K4-19K"/>
-                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="D5D-mo-ewx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="D5D-mo-ewx">
                                 <rect key="frame" x="69.5" y="176" width="236" height="314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="XDz-h8-zvl" firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="1gz-Lb-NP8"/>
-                            <constraint firstItem="XDz-h8-zvl" firstAttribute="topMargin" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="3Gj-wu-4NH"/>
-                            <constraint firstItem="D5D-mo-ewx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="C0L-4K-X4v"/>
-                            <constraint firstItem="XDz-h8-zvl" firstAttribute="leadingMargin" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="HdT-1m-bmx"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XDz-h8-zvl" secondAttribute="bottomMargin" id="ab4-GZ-WG9"/>
-                            <constraint firstItem="XDz-h8-zvl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cMK-J3-G9R"/>
-                            <constraint firstItem="D5D-mo-ewx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="o6M-Yk-SD8"/>
-                            <constraint firstItem="XDz-h8-zvl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xZe-6Q-2Ru"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
