@@ -85,6 +85,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func BowlABtn(_ sender: Any) {
         playBowlA.play()
         GongImage.StartRotating()
+            
+        
        
     }
     
@@ -112,7 +114,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         GongImage.stopRotating()
     
         }}
-    
-    
+    //stops Gong from spinning if NO sound file is playing//
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        GongImage.stopRotating()
+    }
     
 }
