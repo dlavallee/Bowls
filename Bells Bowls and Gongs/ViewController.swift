@@ -82,6 +82,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     @IBOutlet weak var GongImage: UIImageView!
     
+    //bowl a button
     @IBAction func BowlABtn(_ sender: Any) {
         playBowlA.play()
         GongImage.StartRotating()
@@ -90,30 +91,29 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
        
     }
     
+    //bowl b button
     @IBAction func BowlBBtn(_ sender: Any) {
         playBowlB.play()
         
         GongImage.StartRotating()
     }
     
+    //burmese gong button
     @IBAction func BurmeseBtn(_ sender: Any) {
         playBurmese.play()
         
         GongImage.StartRotating()
     }
     
-    
+    //chinese gong button
     @IBAction func ChineseBtn(_ sender: Any) {
         playChinese.play()
         
         GongImage.StartRotating()
     }
     
-    func isasoundplaying() {
-    if playBowlA.isPlaying == false {
-        GongImage.stopRotating()
     
-        }}
+    
     //stops Gong from spinning if NO sound file is playing//
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         GongImage.stopRotating()
