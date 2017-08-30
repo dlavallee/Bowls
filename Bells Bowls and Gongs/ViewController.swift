@@ -15,9 +15,8 @@ var playBowlB = AVAudioPlayer()
 var playBurmese = AVAudioPlayer()
 var playChinese = AVAudioPlayer()
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
 
-    
     
     
     
@@ -36,8 +35,9 @@ class ViewController: UIViewController {
         //BowlA
         do {
             playBowlA = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path (forResource: "bowla", ofType: "wav")!))
+            playBowlA.delegate = self
             playBowlA.prepareToPlay()
-        }
+                    }
         catch {
             print(error)
         }
@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         //BowlB
         do {
             playBowlB = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path (forResource: "bowlb", ofType: "wav")!))
+            playBowlB.delegate = self
             playBowlB.prepareToPlay()
         }
         catch {
@@ -54,6 +55,7 @@ class ViewController: UIViewController {
         //Burmese
         do {
             playBurmese = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path (forResource: "gong-burmese", ofType: "wav")!))
+            playBurmese.delegate = self
             playBurmese.prepareToPlay()
         }
         catch {
@@ -63,6 +65,7 @@ class ViewController: UIViewController {
         //Chinese
         do {
             playChinese = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path (forResource: "gong-chinese", ofType: "wav")!))
+            playChinese.delegate = self
             playChinese.prepareToPlay()
         }
         catch {
@@ -81,8 +84,8 @@ class ViewController: UIViewController {
     
     @IBAction func BowlABtn(_ sender: Any) {
         playBowlA.play()
-        
         GongImage.StartRotating()
+       
     }
     
     @IBAction func BowlBBtn(_ sender: Any) {
@@ -104,5 +107,12 @@ class ViewController: UIViewController {
         GongImage.StartRotating()
     }
     
+    func isasoundplaying() {
+    if playBowlA.isPlaying == false {
+        GongImage.stopRotating()
+    
+        }}
+    
+    
+    
 }
-
