@@ -25,11 +25,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZHS-zL-Las">
                                 <rect key="frame" x="69" y="123" width="237" height="524"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="bottom" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bkY-fV-kJM">
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bkY-fV-kJM">
                                         <rect key="frame" x="0.0" y="0.0" width="237" height="524"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jR-9O-Quj">
-                                                <rect key="frame" x="18" y="0.0" width="201.5" height="114"/>
+                                                <rect key="frame" x="18" y="0.0" width="201.5" height="129"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Bells Gongs and Bowls">
                                                         <attributes>
@@ -41,33 +41,65 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2Tf-bT-zDb">
-                                                <rect key="frame" x="68" y="134" width="101" height="135"/>
+                                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="2Tf-bT-zDb">
+                                                <rect key="frame" x="68" y="134" width="101" height="219"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snx-GM-aT3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="101" height="30"/>
-                                                        <state key="normal" title="Bowl A"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Snx-GM-aT3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101" height="52.5"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Bowl A">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="12" name="Zapfino"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
                                                         <connections>
                                                             <action selector="BowlABtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfo-57-COI"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-N7-Z6k">
-                                                        <rect key="frame" x="0.0" y="35" width="101" height="30"/>
-                                                        <state key="normal" title="Bowl B"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-N7-Z6k">
+                                                        <rect key="frame" x="0.0" y="55.5" width="101" height="52"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Bowl B">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="12" name="Zapfino"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
                                                         <connections>
                                                             <action selector="BowlBBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJr-WU-Nki"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdO-Md-6Ni">
-                                                        <rect key="frame" x="0.0" y="70" width="101" height="30"/>
-                                                        <state key="normal" title="Chinese Gong"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WdO-Md-6Ni">
+                                                        <rect key="frame" x="0.0" y="110.5" width="101" height="53"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Chinese Gong">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="12" name="Zapfino"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
                                                         <connections>
                                                             <action selector="ChineseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyc-qo-hl6"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an7-dw-m7g">
-                                                        <rect key="frame" x="0.0" y="105" width="101" height="30"/>
-                                                        <state key="normal" title="Burmese Gong"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="an7-dw-m7g">
+                                                        <rect key="frame" x="0.0" y="166.5" width="101" height="52.5"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Burmese Gong">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="12" name="Zapfino"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
                                                         <connections>
                                                             <action selector="BurmeseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MD-VB-abM"/>
                                                         </connections>
@@ -83,7 +115,7 @@
                                                 </constraints>
                                             </stackView>
                                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gong.png" translatesAutoresizingMaskIntoConstraints="NO" id="lEg-UB-Uoe">
-                                                <rect key="frame" x="0.5" y="289" width="236" height="235"/>
+                                                <rect key="frame" x="0.5" y="358" width="236" height="166"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
