@@ -21,7 +21,8 @@ extension UIView {
             animate.repeatCount = Float.infinity
             animate.fromValue = 0.0
             animate.toValue = Float(Double.pi * 2.0)
-            animate.duration = 10 //this will change the speed of the rotation anomation (gong)
+            animate.isRemovedOnCompletion = false
+            animate.duration = 10 //this will change the speed of the rotation animation (gong)
             self.layer.add(animate, forKey: kAnimationKey)
             
         }}
@@ -29,8 +30,12 @@ extension UIView {
         let kAnimationKey = "rotation"
         
         if self.layer.animation(forKey: kAnimationKey) != nil {
+
+            
             self.layer.removeAnimation(forKey: kAnimationKey)
+            
+            
+            
         }}
-    
     
 }

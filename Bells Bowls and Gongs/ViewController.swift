@@ -119,4 +119,5 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         GongImage.stopRotating()
     }
     
+        
 }
